@@ -83,16 +83,12 @@ export interface Language {
  */
 export const skillCategories: string[] = [
   'Languages',    // Programming languages
+  'AI & ML',      // Artificial intelligence & machine learning
   'Frontend',     // Frontend frameworks & libraries
   'Backend',      // Backend frameworks & technologies
   'Databases',    // Database technologies
-  'Cloud',        // Cloud platforms & services
   'DevOps',       // DevOps tools & practices
-  // Add more categories here:
-  // 'Mobile',
-  // 'Design',
-  // 'Soft Skills',
-  // 'Other',
+  'Leadership',   // Leadership & business skills
 ];
 
 /**
@@ -108,27 +104,91 @@ export const skills: Skill[] = [
   // PROGRAMMING LANGUAGES
   // ---------------------------------------------------------------------------
   {
-    name: 'TypeScript',
+    name: 'PHP 8.4',
     level: 95,
     category: 'Languages',
-    yearsOfExperience: 5,
+    yearsOfExperience: 12,
   },
   {
     name: 'JavaScript',
-    level: 95,
+    level: 92,
     category: 'Languages',
-    yearsOfExperience: 8,
+    yearsOfExperience: 12,
   },
   {
-    name: 'Python',
-    level: 80,
+    name: 'TypeScript',
+    level: 85,
     category: 'Languages',
     yearsOfExperience: 4,
   },
   {
-    name: 'Go',
-    level: 65,
+    name: 'Python',
+    level: 85,
     category: 'Languages',
+    yearsOfExperience: 6,
+  },
+  {
+    name: 'SQL',
+    level: 88,
+    category: 'Languages',
+    yearsOfExperience: 12,
+  },
+  {
+    name: 'C/C++',
+    level: 55,
+    category: 'Languages',
+    yearsOfExperience: 3,
+  },
+  {
+    name: 'Java',
+    level: 55,
+    category: 'Languages',
+    yearsOfExperience: 3,
+  },
+  {
+    name: 'HTML5',
+    level: 95,
+    category: 'Languages',
+    yearsOfExperience: 12,
+  },
+
+  // ---------------------------------------------------------------------------
+  // AI & ML
+  // ---------------------------------------------------------------------------
+  {
+    name: 'Agentic AI Systems',
+    level: 92,
+    category: 'AI & ML',
+    yearsOfExperience: 2,
+  },
+  {
+    name: 'LLM Fine-Tuning (Unsloth)',
+    level: 88,
+    category: 'AI & ML',
+    yearsOfExperience: 2,
+  },
+  {
+    name: 'Claude API',
+    level: 90,
+    category: 'AI & ML',
+    yearsOfExperience: 2,
+  },
+  {
+    name: 'Ollama / vLLM',
+    level: 88,
+    category: 'AI & ML',
+    yearsOfExperience: 2,
+  },
+  {
+    name: 'PyTorch',
+    level: 72,
+    category: 'AI & ML',
+    yearsOfExperience: 2,
+  },
+  {
+    name: 'Prompt Engineering',
+    level: 92,
+    category: 'AI & ML',
     yearsOfExperience: 2,
   },
 
@@ -136,28 +196,22 @@ export const skills: Skill[] = [
   // FRONTEND
   // ---------------------------------------------------------------------------
   {
-    name: 'React',
-    level: 95,
+    name: 'Vue.js',
+    level: 88,
     category: 'Frontend',
-    yearsOfExperience: 6,
+    yearsOfExperience: 5,
   },
   {
-    name: 'Next.js',
-    level: 90,
+    name: 'React',
+    level: 78,
     category: 'Frontend',
     yearsOfExperience: 4,
   },
   {
-    name: 'Tailwind CSS',
-    level: 90,
+    name: 'Handlebars / Templating',
+    level: 85,
     category: 'Frontend',
-    yearsOfExperience: 3,
-  },
-  {
-    name: 'Vue.js',
-    level: 70,
-    category: 'Frontend',
-    yearsOfExperience: 2,
+    yearsOfExperience: 6,
   },
 
   // ---------------------------------------------------------------------------
@@ -165,25 +219,31 @@ export const skills: Skill[] = [
   // ---------------------------------------------------------------------------
   {
     name: 'Node.js',
-    level: 90,
+    level: 85,
     category: 'Backend',
     yearsOfExperience: 6,
   },
   {
-    name: 'Express',
-    level: 88,
+    name: 'REST APIs',
+    level: 92,
     category: 'Backend',
-    yearsOfExperience: 5,
+    yearsOfExperience: 10,
   },
   {
-    name: 'Django',
-    level: 75,
+    name: 'WebSockets',
+    level: 82,
     category: 'Backend',
-    yearsOfExperience: 3,
+    yearsOfExperience: 4,
   },
   {
-    name: 'GraphQL',
-    level: 80,
+    name: 'i18n / Internationalization',
+    level: 85,
+    category: 'Backend',
+    yearsOfExperience: 4,
+  },
+  {
+    name: '.NET Framework',
+    level: 55,
     category: 'Backend',
     yearsOfExperience: 3,
   },
@@ -192,61 +252,91 @@ export const skills: Skill[] = [
   // DATABASES
   // ---------------------------------------------------------------------------
   {
-    name: 'PostgreSQL',
-    level: 85,
+    name: 'MySQL',
+    level: 92,
+    category: 'Databases',
+    yearsOfExperience: 12,
+  },
+  {
+    name: 'Microsoft SQL Server',
+    level: 78,
     category: 'Databases',
     yearsOfExperience: 5,
   },
   {
-    name: 'MongoDB',
-    level: 80,
+    name: 'Redis',
+    level: 82,
     category: 'Databases',
     yearsOfExperience: 4,
   },
   {
-    name: 'Redis',
+    name: 'PostgreSQL',
     level: 75,
     category: 'Databases',
-    yearsOfExperience: 3,
+    yearsOfExperience: 4,
   },
 
   // ---------------------------------------------------------------------------
-  // CLOUD & DEVOPS
+  // DEVOPS
   // ---------------------------------------------------------------------------
   {
-    name: 'AWS',
-    level: 85,
-    category: 'Cloud',
-    yearsOfExperience: 4,
-  },
-  {
     name: 'Docker',
-    level: 85,
+    level: 90,
     category: 'DevOps',
-    yearsOfExperience: 4,
+    yearsOfExperience: 6,
   },
   {
-    name: 'Kubernetes',
-    level: 70,
+    name: 'Linux / Server Administration',
+    level: 90,
     category: 'DevOps',
-    yearsOfExperience: 2,
+    yearsOfExperience: 10,
   },
   {
     name: 'CI/CD',
     level: 85,
     category: 'DevOps',
+    yearsOfExperience: 6,
+  },
+  {
+    name: 'Git',
+    level: 92,
+    category: 'DevOps',
+    yearsOfExperience: 10,
+  },
+  {
+    name: 'AWS',
+    level: 75,
+    category: 'DevOps',
     yearsOfExperience: 4,
   },
 
   // ---------------------------------------------------------------------------
-  // ADD MORE SKILLS HERE
+  // LEADERSHIP
   // ---------------------------------------------------------------------------
-  // {
-  //   name: 'Your Skill',
-  //   level: 85,
-  //   category: 'Category Name',
-  //   yearsOfExperience: 3,
-  // },
+  {
+    name: 'Technical Leadership',
+    level: 90,
+    category: 'Leadership',
+    yearsOfExperience: 8,
+  },
+  {
+    name: 'Agile / SDLC',
+    level: 88,
+    category: 'Leadership',
+    yearsOfExperience: 8,
+  },
+  {
+    name: 'Business Intelligence',
+    level: 82,
+    category: 'Leadership',
+    yearsOfExperience: 8,
+  },
+  {
+    name: 'Regulatory Compliance',
+    level: 85,
+    category: 'Leadership',
+    yearsOfExperience: 5,
+  },
 ];
 
 /**
@@ -258,10 +348,6 @@ export const skills: Skill[] = [
  */
 export const languages: Language[] = [
   { name: 'English', level: 'Native' },
-  { name: 'Spanish', level: 'Professional' },
-  { name: 'French', level: 'Basic' },
-  // Add more languages here:
-  // { name: 'German', level: 'Intermediate' },
 ];
 
 // =============================================================================

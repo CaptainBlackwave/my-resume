@@ -129,16 +129,11 @@ export interface Project {
  */
 export const projectCategories: string[] = [
   'All',
+  'AI / Agentic Systems',
   'Web Application',
+  'IoT & Compliance',
   'SaaS',
-  'Mobile App',
-  'Data Visualization',
   'Developer Tools',
-  // Add more categories here:
-  // 'E-Commerce',
-  // 'AI/ML',
-  // 'Open Source',
-  // 'Personal Project',
 ];
 
 /**
@@ -150,169 +145,111 @@ export const projectCategories: string[] = [
  * Mark your best 3-4 projects as featured.
  */
 export const projects: Project[] = [
-  // ---------------------------------------------------------------------------
-  // FEATURED PROJECT 1
-  // ---------------------------------------------------------------------------
   {
     id: 'proj-1',
-    slug: 'e-commerce-platform',
-    title: 'E-Commerce Platform',
+    slug: 'agentic-coding-team',
+    title: 'Agentic Coding Team Orchestration',
     description:
-      'Full-stack e-commerce solution with real-time inventory management and payment processing.',
-    longDescription: `Built a comprehensive e-commerce platform from scratch, featuring real-time inventory tracking, 
-    secure payment processing with Stripe, and an admin dashboard for order management. The platform handles 
-    thousands of concurrent users and processes over $2M in transactions monthly.`,
-    thumbnail: '/projects/ecommerce-thumb.jpg',
-    images: [
-      '/projects/ecommerce-1.jpg',
-      '/projects/ecommerce-2.jpg',
-      '/projects/ecommerce-3.jpg',
-    ],
-    technologies: ['Next.js', 'TypeScript', 'PostgreSQL', 'Stripe', 'Redis', 'AWS'],
-    category: 'Web Application',
-    role: 'Lead Developer',
-    duration: '6 months',
-    liveUrl: 'https://example-ecommerce.com',
-    githubUrl: 'https://github.com/alexjohnson/ecommerce',
+      'Custom agentic coding ecosystem using Claude APIs and proprietary CLI tooling to automate unit testing, documentation, and boilerplate generation.',
+    longDescription: `Engineered a fully autonomous coding team using the Claude API and custom CLI tools. The system orchestrates agents that handle unit test generation, documentation writing, and boilerplate scaffolding — dramatically reducing manual development overhead and accelerating the SDLC.`,
+    thumbnail: '/projects/agentic-coding-thumb.jpg',
+    images: [],
+    technologies: ['Python', 'Claude API', 'CLI Tooling', 'Docker', 'Linux'],
+    category: 'AI / Agentic Systems',
+    role: 'Architect & Lead Developer',
+    duration: 'Ongoing',
     featured: true,
     highlights: [
-      'Processed $2M+ in transactions',
-      '99.9% uptime over 2 years',
-      '50ms average API response time',
-      'Handles 10K+ concurrent users',
+      'Automates unit testing, docs, and boilerplate generation',
+      'Increases development velocity significantly',
+      'Built on Claude API with custom orchestration layer',
+      'Proprietary CLI tools for workflow control',
     ],
   },
-
-  // ---------------------------------------------------------------------------
-  // FEATURED PROJECT 2
-  // ---------------------------------------------------------------------------
   {
     id: 'proj-2',
-    slug: 'task-management-app',
-    title: 'TaskFlow - Task Management',
+    slug: 'local-llm-infrastructure',
+    title: 'Secure Local-First LLM Infrastructure',
     description:
-      'Collaborative task management application with real-time updates and team features.',
-    longDescription: `A modern task management application designed for remote teams. Features include 
-    real-time collaboration, Kanban boards, time tracking, and integrations with popular tools like 
-    Slack and GitHub.`,
-    thumbnail: '/projects/taskflow-thumb.jpg',
-    images: ['/projects/taskflow-1.jpg', '/projects/taskflow-2.jpg'],
-    technologies: ['React', 'Node.js', 'Socket.io', 'MongoDB', 'Docker'],
-    category: 'SaaS',
-    role: 'Full-Stack Developer',
-    duration: '4 months',
-    liveUrl: 'https://taskflow-demo.com',
-    githubUrl: 'https://github.com/alexjohnson/taskflow',
+      'Private, on-premise LLM deployment for accounting and tax agencies using vLLM, Ollama, and LM Studio with rigorous prompt injection mitigation.',
+    longDescription: `Deployed fully local LLM environments for high-compliance professional services clients. The architecture uses vLLM, Ollama, and LM Studio to ensure 100% data residency. Implemented prompt security hardening and injection mitigation to meet strict privacy requirements for accounting, legal, and tax workflows.`,
+    thumbnail: '/projects/local-llm-thumb.jpg',
+    images: [],
+    technologies: ['vLLM', 'Ollama', 'LM Studio', 'Python', 'Docker', 'Linux', 'Prompt Engineering'],
+    category: 'AI / Agentic Systems',
+    role: 'AI Infrastructure Architect',
+    duration: '6 months',
     featured: true,
     highlights: [
-      '5K+ active users',
-      'Real-time collaboration',
-      '15+ third-party integrations',
-      '4.8/5 user rating',
+      '100% data residency — zero cloud exposure',
+      'Prompt injection mitigation for compliance',
+      'Deployed for accounting and tax agencies',
+      'Custom GUI for non-technical staff interaction',
     ],
   },
-
-  // ---------------------------------------------------------------------------
-  // FEATURED PROJECT 3
-  // ---------------------------------------------------------------------------
   {
     id: 'proj-3',
-    slug: 'analytics-dashboard',
-    title: 'DataViz Analytics Dashboard',
+    slug: 'real-time-trading-platform',
+    title: 'Real-Time Stock & Crypto Tracking Platform',
     description:
-      'Interactive analytics dashboard with customizable charts and real-time data visualization.',
-    thumbnail: '/projects/analytics-thumb.jpg',
-    images: ['/projects/analytics-1.jpg', '/projects/analytics-2.jpg'],
-    technologies: ['React', 'D3.js', 'Python', 'FastAPI', 'PostgreSQL'],
-    category: 'Data Visualization',
-    role: 'Frontend Lead',
-    duration: '3 months',
-    // liveUrl: undefined,  // No live demo
-    // githubUrl: undefined,  // Private repository
+      'High-performance full-stack application with WebSocket-driven live market data, Redis caching, and Docker-containerized global infrastructure.',
+    longDescription: `Architected and deployed a high-performance MVC web application for real-time stock and cryptocurrency tracking. Integrated WebSockets and REST APIs for sub-second data updates, implemented Redis caching layers and New Relic tracing for performance optimization, and built a custom i18n internationalization layer with full Docker containerization for global deployment.`,
+    thumbnail: '/projects/trading-thumb.jpg',
+    images: [],
+    technologies: ['PHP 8.4', 'WebSockets', 'REST APIs', 'Redis', 'Docker', 'New Relic', 'i18n'],
+    category: 'Web Application',
+    role: 'Senior Developer',
+    duration: '12 months',
     featured: true,
     highlights: [
-      '20+ chart types',
-      'Export to PDF/Excel',
-      'Custom report builder',
-      'Role-based access control',
+      'Sub-second live market data updates via WebSockets',
+      'Redis caching for reduced latency',
+      'Custom i18n layer for global markets',
+      'Full Docker containerization on Linux',
     ],
   },
-
-  // ---------------------------------------------------------------------------
-  // NON-FEATURED PROJECT
-  // ---------------------------------------------------------------------------
   {
     id: 'proj-4',
-    slug: 'mobile-fitness-app',
-    title: 'FitTrack Mobile App',
+    slug: 'iot-disaster-mitigation-dashboard',
+    title: 'IoT Disaster Mitigation Dashboard',
     description:
-      'Cross-platform fitness tracking application with workout plans and progress analytics.',
-    thumbnail: '/projects/fitness-thumb.jpg',
-    images: ['/projects/fitness-1.jpg', '/projects/fitness-2.jpg'],
-    technologies: ['React Native', 'TypeScript', 'Firebase', 'Node.js'],
-    category: 'Mobile App',
-    role: 'Mobile Developer',
-    duration: '5 months',
-    // liveUrl: undefined,  // App store link would go here
-    githubUrl: 'https://github.com/alexjohnson/fittrack',
+      'Real-time environmental monitoring and disaster mitigation system for Health Canada regulated cultivation facilities with automated emergency notifications.',
+    longDescription: `Architected an IoT sensor network and custom dashboard for regulated cannabis cultivation facilities. The system monitored controlled warehouse conditions in real-time, generated automated compliance reports for Health Canada's CTLS system, and provided instant emergency notifications to prevent crop loss and equipment failure.`,
+    thumbnail: '/projects/iot-dashboard-thumb.jpg',
+    images: [],
+    technologies: ['Python', 'IoT Sensors', 'Node.js', 'MySQL', 'Linux', 'Data Visualization', 'Government APIs'],
+    category: 'IoT & Compliance',
+    role: 'Systems & Compliance Engineer',
+    duration: '18 months',
     featured: false,
     highlights: [
-      'iOS & Android support',
-      'Offline-first architecture',
-      'Wearable device integration',
-      '10K+ downloads',
+      'Health Canada CTLS compliance — 100% regulatory adherence',
+      'Real-time IoT sensor network for environmental monitoring',
+      'Automated seed-to-sale reporting',
+      'Instant disaster alerts preventing crop & equipment loss',
     ],
   },
-
-  // ---------------------------------------------------------------------------
-  // NON-FEATURED PROJECT
-  // ---------------------------------------------------------------------------
   {
     id: 'proj-5',
-    slug: 'open-source-cli',
-    title: 'DevToolkit CLI',
+    slug: 'property-management-crm',
+    title: 'Property Management CRM Platform',
     description:
-      'Open-source command-line toolkit for developers with code generation and automation.',
-    thumbnail: '/projects/cli-thumb.jpg',
-    images: ['/projects/cli-1.jpg'],
-    technologies: ['Go', 'Cobra', 'Docker'],
-    category: 'Developer Tools',
-    role: 'Creator & Maintainer',
-    duration: 'Ongoing',
-    // liveUrl: undefined,  // CLI tools usually don't have live URLs
-    githubUrl: 'https://github.com/alexjohnson/devtoolkit',
+      'Proprietary CRM system built from scratch to manage hundreds of properties and tenant records, replacing legacy pen-and-paper workflows.',
+    longDescription: `As CTO of Go Pro Property Management, conceptualized and led development of a specialized CRM platform to centralize management of hundreds of properties and tenant records. Directed a full digital transformation, replacing manual workflows with a secure digital infrastructure. Used custom migration scripts to ensure 100% data accuracy during the physical-to-digital transition.`,
+    thumbnail: '/projects/crm-thumb.jpg',
+    images: [],
+    technologies: ['PHP', 'Vue.js', 'MySQL', 'Docker', 'Linux'],
+    category: 'SaaS',
+    role: 'CTO & Lead Architect',
+    duration: '3+ years',
     featured: false,
     highlights: [
-      '2K+ GitHub stars',
-      '500+ contributors',
-      'Used by 100+ companies',
-      'Weekly releases',
+      'Manages hundreds of properties and tenant records',
+      'Full digital transformation from pen-and-paper workflows',
+      '100% data accuracy via custom migration scripts',
+      'Led cross-functional IT team through full SDLC',
     ],
   },
-
-  // ---------------------------------------------------------------------------
-  // ADD MORE PROJECTS HERE
-  // ---------------------------------------------------------------------------
-  // {
-  //   id: 'proj-6',
-  //   slug: 'your-project-slug',
-  //   title: 'Your Project Title',
-  //   description: 'Short description of your project...',
-  //   longDescription: 'Detailed description...',  // Optional
-  //   thumbnail: '/projects/your-project-thumb.jpg',
-  //   images: ['/projects/your-project-1.jpg'],
-  //   technologies: ['Tech1', 'Tech2', 'Tech3'],
-  //   category: 'Web Application',
-  //   role: 'Your Role',
-  //   duration: '3 months',
-  //   liveUrl: 'https://your-project.com',  // Optional
-  //   githubUrl: 'https://github.com/you/project',  // Optional
-  //   featured: false,
-  //   highlights: [
-  //     'Highlight 1 with metrics',
-  //     'Highlight 2',
-  //   ],
-  // },
 ];
 
 // =============================================================================

@@ -135,8 +135,22 @@ export const siteConfig: SiteConfig = {
   // ---------------------------------------------------------------------------
   meta: {
     titleTemplate: '{{name}} | {{title}}',
-    defaultDescription: 'Professional resume and portfolio website',
-    keywords: ['resume', 'portfolio', 'developer', 'software engineer', 'web developer'],
+    defaultDescription:
+      'Senior Developer, AI Architect & former CTO with 12+ years of experience in scalable web ecosystems, Agentic AI systems, and secure infrastructure.',
+    keywords: [
+      'AI Architect',
+      'Senior Developer',
+      'Agentic AI',
+      'LLM Fine-Tuning',
+      'PHP',
+      'Vue.js',
+      'Docker',
+      'IoT',
+      'CTO',
+      'Nova Scotia',
+      'full-stack developer',
+      'local LLM',
+    ],
     siteUrl: 'https://your-domain.com',
     locale: 'en',
   },

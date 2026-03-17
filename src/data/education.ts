@@ -154,62 +154,22 @@ export interface Award {
  * List in reverse chronological order (most recent first).
  */
 export const education: Education[] = [
-  // ---------------------------------------------------------------------------
-  // HIGHEST DEGREE
-  // ---------------------------------------------------------------------------
   {
     id: 'edu-1',
-    degree: 'Master of Science',
+    degree: "Bachelor's",
     field: 'Computer Science',
-    school: 'Stanford University',
-    // schoolLogo: '/logos/stanford.png',  // Uncomment if you have a logo
-    location: 'Stanford, CA',
-    startYear: 2014,
-    endYear: 2016,
-    gpa: '3.9/4.0',
-    honors: ['Magna Cum Laude', "Dean's List"],
+    school: 'Dalhousie University',
+    location: 'Halifax, NS',
+    startYear: 2018,
+    endYear: 2021,
     relevantCourses: [
-      'Distributed Systems',
-      'Machine Learning',
-      'Advanced Algorithms',
+      'Data Structures & Algorithms',
+      'Database Management Systems (DBMS)',
+      'Software Engineering Lifecycle',
+      'Advanced Network Security',
+      'Relational Database Systems (RDBMS)',
     ],
   },
-
-  // ---------------------------------------------------------------------------
-  // UNDERGRADUATE DEGREE
-  // ---------------------------------------------------------------------------
-  {
-    id: 'edu-2',
-    degree: 'Bachelor of Science',
-    field: 'Computer Engineering',
-    school: 'UC Berkeley',
-    location: 'Berkeley, CA',
-    startYear: 2010,
-    endYear: 2014,
-    gpa: '3.7/4.0',
-    honors: ['Cum Laude'],
-    relevantCourses: [
-      'Data Structures',
-      'Operating Systems',
-      'Computer Networks',
-    ],
-  },
-
-  // ---------------------------------------------------------------------------
-  // ADD MORE EDUCATION HERE
-  // ---------------------------------------------------------------------------
-  // {
-  //   id: 'edu-3',
-  //   degree: 'Your Degree',
-  //   field: 'Your Field',
-  //   school: 'School Name',
-  //   location: 'City, Country',
-  //   startYear: 2018,
-  //   endYear: 2022,
-  //   gpa: '3.5/4.0',  // Optional
-  //   honors: ['Honor 1'],  // Optional
-  //   relevantCourses: ['Course 1', 'Course 2'],  // Optional
-  // },
 ];
 
 /**
@@ -223,43 +183,10 @@ export const education: Education[] = [
 export const certifications: Certification[] = [
   {
     id: 'cert-1',
-    name: 'AWS Solutions Architect - Professional',
-    issuer: 'Amazon Web Services',
-    // issuerLogo: '/logos/aws.png',  // Uncomment if you have a logo
-    date: '2023-06',
-    expirationDate: '2026-06',
-    credentialId: 'AWS-SAP-123456',
-    credentialUrl: 'https://aws.amazon.com/verification',
+    name: 'Health Canada Security Clearance',
+    issuer: 'Health Canada',
+    date: '2018-01',
   },
-  {
-    id: 'cert-2',
-    name: 'Google Cloud Professional Developer',
-    issuer: 'Google Cloud',
-    date: '2023-01',
-    expirationDate: '2025-01',
-    credentialId: 'GCP-PD-789012',
-  },
-  {
-    id: 'cert-3',
-    name: 'Certified Kubernetes Administrator',
-    issuer: 'Cloud Native Computing Foundation',
-    date: '2022-08',
-    expirationDate: '2025-08',
-    credentialId: 'CKA-345678',
-  },
-
-  // ---------------------------------------------------------------------------
-  // ADD MORE CERTIFICATIONS HERE
-  // ---------------------------------------------------------------------------
-  // {
-  //   id: 'cert-4',
-  //   name: 'Certification Name',
-  //   issuer: 'Issuing Organization',
-  //   date: '2024-01',
-  //   expirationDate: '2027-01',  // Optional
-  //   credentialId: 'CERT-ID',    // Optional
-  //   credentialUrl: 'https://verify.example.com',  // Optional
-  // },
 ];
 
 /**
@@ -273,29 +200,20 @@ export const certifications: Certification[] = [
 export const awards: Award[] = [
   {
     id: 'award-1',
-    title: 'Employee of the Year',
-    issuer: 'TechCorp Inc.',
-    date: '2023',
-    description: 'Recognized for outstanding contributions to the engineering team',
+    title: 'Crisis Intervention Tools — University Project Lead',
+    issuer: 'Dalhousie University',
+    date: '2020',
+    description:
+      'Spearheaded a cross-functional university team in the end-to-end development of digital mental health resources, directing the technical roadmap for tools designed to support students in crisis with secure data handling and accessible UI/UX.',
   },
   {
     id: 'award-2',
-    title: 'Best Technical Talk',
-    issuer: 'ReactConf 2022',
-    date: '2022',
-    description: 'Awarded for presentation on React performance optimization',
+    title: 'RDBMS for Disaster Mitigation — Capstone Project',
+    issuer: 'Dalhousie University',
+    date: '2021',
+    description:
+      'Engineered a robust RDBMS schema specifically for disaster mitigation and emergency response, ensuring high availability, ACID compliance, and rapid query performance for real-time critical infrastructure decision-making.',
   },
-
-  // ---------------------------------------------------------------------------
-  // ADD MORE AWARDS HERE
-  // ---------------------------------------------------------------------------
-  // {
-  //   id: 'award-3',
-  //   title: 'Award Title',
-  //   issuer: 'Organization',
-  //   date: '2024',
-  //   description: 'Brief description of the award',  // Optional
-  // },
 ];
 
 // =============================================================================

@@ -96,36 +96,33 @@ export const profile: Profile = {
   // -------------------------------------------------------------------------
   // BASIC INFO (Required)
   // -------------------------------------------------------------------------
-  name: 'Alex Johnson',
-  title: 'Senior Software Engineer',
+  name: 'Christian MacDonald',
+  title: 'Senior Developer & AI Architect',
   photo: '/images/profile.jpg', // Set to '' to hide photo
-  email: 'alex.johnson@example.com',
-  location: 'San Francisco, CA',
+  email: 'chris.j.c.mac@gmail.com',
+  location: 'Sydney, NS, Canada',
 
   // -------------------------------------------------------------------------
   // CONTACT & SOCIAL (Optional - remove or set to undefined if not needed)
   // -------------------------------------------------------------------------
-  phone: '+1 (555) 123-4567',
-  website: 'https://alexjohnson.dev',
-  linkedin: 'https://linkedin.com/in/alexjohnson',
-  github: 'https://github.com/alexjohnson',
-  twitter: 'https://twitter.com/alexjohnson',
+  phone: '+1 902 921 8102',
 
   // -------------------------------------------------------------------------
   // PROFESSIONAL SUMMARY
   // Keep this concise: 2-4 sentences that capture who you are professionally
   // -------------------------------------------------------------------------
-  summary: `Results-driven software engineer with 8+ years of experience building scalable web applications. Passionate about clean code, performance optimization, and mentoring junior developers. Expert in React, TypeScript, and cloud architecture.`,
+  summary: `Innovative Senior Developer, AI Architect, and former CTO with over 12 years of experience architecting high-performance, scalable web ecosystems and leading digital transformations. Expert in modern PHP 8.4, Vue.js, and Agentic AI integration, with a proven track record of migrating legacy systems into hardened, secure, and containerized environments. Strategic leader in deploying Autonomous AI Systems, specialized in fine-tuning LLMs via Unsloth and engineering custom agentic coding teams to accelerate the SDLC. Adept at architecting secure, local-first AI infrastructures ensuring data privacy through advanced prompt security and injection mitigation.`,
 
   // -------------------------------------------------------------------------
   // KEY HIGHLIGHTS
   // 3-5 achievement statements with metrics when possible
   // -------------------------------------------------------------------------
   highlights: [
-    'Led development of platform serving 1M+ users',
-    'Reduced page load time by 60%',
-    'Managed team of 5 engineers',
-    'Speaker at 3 tech conferences',
+    '12+ years architecting scalable web ecosystems',
+    'Former CTO leading full digital transformations',
+    'Expert in Agentic AI, LLM fine-tuning & local-first AI infrastructure',
+    'Health Canada security clearance — IoT & compliance engineering',
+    'Automated fraud detection & disaster mitigation for high-volume systems',
   ],
 };
 

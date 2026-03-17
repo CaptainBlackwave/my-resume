@@ -117,34 +117,36 @@ export interface Experience {
  */
 export const experience: Experience[] = [
   // ---------------------------------------------------------------------------
-  // CURRENT POSITION (or most recent)
+  // CURRENT POSITION
   // ---------------------------------------------------------------------------
   {
     id: 'exp-1',
-    title: 'Senior Software Engineer',
-    company: 'TechCorp Inc.',
-    // companyLogo: '/logos/techcorp.png',  // Uncomment and add logo if you have one
-    location: 'San Francisco, CA',
-    type: 'full-time',
-    startDate: '2022-01',
-    // endDate: undefined,  // Omit or undefined for current position
+    title: 'Principal AI Solutions Architect',
+    company: 'Freelance / Self-Employed',
+    location: 'Nova Scotia, Canada',
+    type: 'freelance',
+    startDate: '2025-01',
     current: true,
     description:
-      'Lead development of customer-facing web applications and mentor junior developers.',
+      'Architecting and deploying production-grade Agentic AI ecosystems, with a focus on LLM fine-tuning, autonomous coding workflows, and secure local-first infrastructure for high-compliance sectors.',
     achievements: [
-      'Architected microservices platform handling 10M+ requests/day',
-      'Reduced deployment time by 80% through CI/CD improvements',
-      'Mentored 3 junior developers to mid-level positions',
-      'Led migration from monolith to microservices architecture',
+      'Engineered a custom agentic coding team using Claude APIs and proprietary CLI tools, automating unit testing, documentation, and boilerplate generation',
+      'Fine-tuned domain-specific LLMs for retail and customer service using Unsloth, achieving high-accuracy intent recognition and reduced production latency',
+      'Deployed local-first LLM environments (vLLM, Ollama, LM Studio) for accounting and tax agencies with 100% data residency and prompt injection mitigation',
+      'Developed real-time AI fraud detection engines analyzing transaction patterns to mitigate risk for SMB e-commerce owners',
+      'Integrated agentic AI into accounting workflows to automate document classification and data extraction from complex tax filings',
+      'Designed and built secure, system-level GUI interfaces for SMEs to interact with local LLMs, abstracting technical complexity for non-technical staff',
     ],
     technologies: [
-      'React',
-      'TypeScript',
-      'Node.js',
-      'PostgreSQL',
-      'AWS',
+      'Python',
+      'Claude API',
+      'Unsloth',
+      'vLLM',
+      'Ollama',
+      'LM Studio',
+      'PyTorch',
       'Docker',
-      'Kubernetes',
+      'Linux',
     ],
   },
 
@@ -153,65 +155,118 @@ export const experience: Experience[] = [
   // ---------------------------------------------------------------------------
   {
     id: 'exp-2',
-    title: 'Software Engineer',
-    company: 'StartupXYZ',
-    location: 'San Francisco, CA',
+    title: 'Senior Web Developer',
+    company: 'Wreckage City LLC',
+    location: 'Remote',
     type: 'full-time',
-    startDate: '2019-03',
-    endDate: '2021-12',
+    startDate: '2024-01',
+    endDate: '2025-01',
     current: false,
-    description: 'Full-stack development for a fast-growing SaaS platform.',
+    description:
+      'Architected and deployed a high-performance full-stack web application with real-time data streaming, international infrastructure, and full SDLC ownership.',
     achievements: [
-      'Built real-time collaboration features used by 50K+ users',
-      'Implemented automated testing reducing bugs by 40%',
-      'Optimized database queries improving response time by 60%',
+      'Architected a high-performance full-stack MVC application using PHP 8.4, ensuring a scalable and maintainable codebase',
+      'Engineered real-time data streaming via WebSockets and REST APIs for live stock and cryptocurrency tracking with sub-second updates',
+      'Optimized performance through strategic Redis caching layers and New Relic tracing, reducing latency and identifying bottlenecks in real-time',
+      'Developed a custom i18n internationalization layer and managed full Docker containerization for seamless Linux deployments',
+      'Managed the full SDLC from server administration and environment setup through CI/CD maintenance',
     ],
-    technologies: ['React', 'Python', 'Django', 'PostgreSQL', 'Redis', 'AWS'],
+    technologies: ['PHP 8.4', 'WebSockets', 'REST APIs', 'Redis', 'Docker', 'New Relic', 'Linux', 'CI/CD'],
   },
 
   // ---------------------------------------------------------------------------
-  // EARLIER POSITION
+  // PREVIOUS POSITION
   // ---------------------------------------------------------------------------
   {
     id: 'exp-3',
-    title: 'Junior Developer',
-    company: 'WebAgency Co.',
-    location: 'Los Angeles, CA',
-    type: 'full-time',
-    startDate: '2016-06',
-    endDate: '2019-02',
+    title: 'Senior Web Developer',
+    company: 'David Interactive LLC',
+    location: 'Remote',
+    type: 'contract',
+    startDate: '2023-05',
+    endDate: '2023-12',
     current: false,
     description:
-      'Developed custom web solutions for various clients across different industries.',
+      'Spearheaded a critical legacy migration and security hardening initiative, converting a monolithic PHP 5.6 application to a modern, high-security PHP 8.4 environment.',
     achievements: [
-      'Delivered 20+ client projects on time and within budget',
-      'Introduced component-based architecture improving code reuse',
-      'Created internal tools saving 10 hours/week of manual work',
+      'Migrated a monolithic PHP 5.6 application to a modern, high-security PHP 8.4 environment',
+      'Audited and hardened all main data flows, mitigating vulnerabilities and implementing secured PHP data pipelines',
+      'Developed a bespoke rendering ecosystem integrating Handlebars with a custom-built hook injection system for modular and dynamic UI components',
+      'Engineered a data-driven i18n engine via the hook system, enabling rapid expansion into international markets without architectural overhauls',
+      'Containerized the entire application suite with Docker, eliminating environment inconsistencies and improving deployment speed',
     ],
-    technologies: ['JavaScript', 'React', 'PHP', 'MySQL', 'WordPress'],
+    technologies: ['PHP 8.4', 'Handlebars', 'Docker', 'i18n', 'Linux', 'Security Hardening'],
   },
 
   // ---------------------------------------------------------------------------
-  // ADD MORE POSITIONS HERE
-  // Copy the template below and fill in your details
+  // PREVIOUS POSITION
   // ---------------------------------------------------------------------------
-  // {
-  //   id: 'exp-4',
-  //   title: 'Your Job Title',
-  //   company: 'Company Name',
-  //   companyLogo: '/logos/company.png',  // Optional
-  //   location: 'City, Country',
-  //   type: 'full-time',
-  //   startDate: 'YYYY-MM',
-  //   endDate: 'YYYY-MM',  // Remove for current position
-  //   current: false,
-  //   description: 'Brief description of your role and responsibilities.',
-  //   achievements: [
-  //     'Achievement with metrics...',
-  //     'Another achievement...',
-  //   ],
-  //   technologies: ['Tech1', 'Tech2', 'Tech3'],
-  // },
+  {
+    id: 'exp-4',
+    title: 'Chief Technology Officer (CTO)',
+    company: 'Go Pro Property Management',
+    location: 'Sydney, NS',
+    type: 'full-time',
+    startDate: '2019-09',
+    endDate: '2023-04',
+    current: false,
+    description:
+      'Conceptualized and executed a full digital transformation, building a proprietary CRM platform to manage hundreds of properties and tenant records while leading a cross-functional IT team.',
+    achievements: [
+      'Conceptualized and developed a specialized CRM platform to manage hundreds of properties and tenant records simultaneously',
+      'Directed a full digital transformation, migrating legacy pen-and-paper workflows into a proprietary digital infrastructure',
+      'Led and mentored a cross-functional team of IT professionals, aligning technical projects with broader business goals',
+      'Standardized data integrity using industry-standard tooling and custom migration scripts to ensure 100% accuracy during physical-to-digital transition',
+    ],
+    technologies: ['PHP', 'Vue.js', 'MySQL', 'CRM Development', 'Linux', 'Docker'],
+  },
+
+  // ---------------------------------------------------------------------------
+  // PREVIOUS POSITION
+  // ---------------------------------------------------------------------------
+  {
+    id: 'exp-5',
+    title: 'Systems & Compliance Engineer',
+    company: 'TMS Family Cultivation',
+    location: 'Nova Scotia, Canada',
+    type: 'full-time',
+    startDate: '2018-01',
+    endDate: '2019-08',
+    current: false,
+    description:
+      'Engineered automated compliance frameworks and IoT monitoring infrastructure for Health Canada regulated cannabis cultivation facilities, operating with full government security clearance.',
+    achievements: [
+      'Obtained and maintained Health Canada security clearance for operations in strictly regulated, secured cultivation facilities',
+      'Engineered automated compliance frameworks for the Cannabis Tracking and Licensing System (CTLS), streamlining full-cycle seed-to-sale reporting with 100% regulatory adherence',
+      'Architected an IoT environmental monitoring suite utilizing a sensor network to track controlled warehouse conditions in real-time',
+      'Developed a custom disaster mitigation dashboard with live data visualization, automated reporting, and emergency notifications to prevent crop loss and equipment failure',
+      'Built internal tools interfacing directly with government tracking systems, minimizing human error in high-stakes data entry',
+    ],
+    technologies: ['IoT', 'Python', 'Node.js', 'MySQL', 'Linux', 'Data Visualization', 'Government APIs'],
+  },
+
+  // ---------------------------------------------------------------------------
+  // EARLIEST POSITION
+  // ---------------------------------------------------------------------------
+  {
+    id: 'exp-6',
+    title: 'Lead Developer',
+    company: 'Small Island Productions',
+    location: 'Halifax, NS',
+    type: 'full-time',
+    startDate: '2012-04',
+    endDate: '2018-01',
+    current: false,
+    description:
+      'Developed tailored internal SaaS solutions to centralize management of employees, customer relations, and business-critical analytics for the company.',
+    achievements: [
+      'Developed tailored internal SaaS solutions centralizing employee management, customer relations, and business-critical analytics',
+      'Optimized customer retention strategies by building custom data visualization tools for real-time user behavior analytics',
+      'Streamlined cross-departmental operations by automating manual reporting tasks, significantly reducing weekly overhead',
+      'Maintained and iterated on customer-facing technology stack to ensure a seamless end-to-end user experience',
+    ],
+    technologies: ['PHP', 'JavaScript', 'MySQL', 'SaaS', 'Analytics', 'CRM'],
+  },
 ];
 
 // =============================================================================
