@@ -147,6 +147,28 @@ export const projectCategories: string[] = [
 export const projects: Project[] = [
   {
     id: 'proj-1',
+    slug: 'live-resume-template',
+    title: 'Live Resume & Portfolio Site',
+    description:
+      'This site — a production-ready Next.js resume and portfolio template, fully customizable via data files and open-sourced as a reusable template for developers.',
+    longDescription: `Built with Next.js 16, React 19, Tailwind CSS 4, and Framer Motion, this is the very site you are viewing. It features a responsive design with dark mode, smooth scroll animations, a filterable portfolio page, print-to-PDF export, a contact form with API route, and a desktop side navigation. All content is driven by TypeScript data files making it trivially customizable. Open-sourced on GitHub as a free template for any developer to fork and use.`,
+    thumbnail: '/projects/resume-site-thumb.jpg',
+    images: [],
+    technologies: ['Next.js', 'React', 'TypeScript', 'Tailwind CSS', 'Framer Motion', 'Bun'],
+    category: 'Developer Tools',
+    role: 'Creator',
+    duration: 'Ongoing',
+    githubUrl: 'https://github.com/CaptainBlackwave/my-resume',
+    featured: true,
+    highlights: [
+      'Fully data-driven — customize entire resume by editing 5 TypeScript files',
+      'Dark mode, print/PDF export, and animated timeline built-in',
+      'Open-sourced on GitHub as a free template for developers',
+      'Built with Next.js 16, React 19, and Tailwind CSS 4',
+    ],
+  },
+  {
+    id: 'proj-2',
     slug: 'agentic-coding-team',
     title: 'Agentic Coding Team Orchestration',
     description:
@@ -167,7 +189,7 @@ export const projects: Project[] = [
     ],
   },
   {
-    id: 'proj-2',
+    id: 'proj-3',
     slug: 'local-llm-infrastructure',
     title: 'Secure Local-First LLM Infrastructure',
     description:
@@ -188,7 +210,7 @@ export const projects: Project[] = [
     ],
   },
   {
-    id: 'proj-3',
+    id: 'proj-4',
     slug: 'real-time-trading-platform',
     title: 'Real-Time Stock & Crypto Tracking Platform',
     description:
@@ -209,7 +231,7 @@ export const projects: Project[] = [
     ],
   },
   {
-    id: 'proj-4',
+    id: 'proj-5',
     slug: 'iot-disaster-mitigation-dashboard',
     title: 'IoT Disaster Mitigation Dashboard',
     description:
@@ -230,7 +252,7 @@ export const projects: Project[] = [
     ],
   },
   {
-    id: 'proj-5',
+    id: 'proj-6',
     slug: 'property-management-crm',
     title: 'Property Management CRM Platform',
     description:
