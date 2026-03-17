@@ -170,6 +170,15 @@ export const education: Education[] = [
       'Relational Database Systems (RDBMS)',
     ],
   },
+  {
+    id: 'edu-2',
+    degree: 'Diploma',
+    field: 'Business Administration',
+    school: 'CBBC Career College',
+    location: 'Nova Scotia, Canada',
+    startYear: 2022,
+    endYear: 2023,
+  },
 ];
 
 /**
