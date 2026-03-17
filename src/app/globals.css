@@ -1,5 +1,8 @@
 @import "tailwindcss";
 
+/* Use class-based dark mode so next-themes can control it */
+@variant dark (&:where(.dark, .dark *));
+
 /* Custom CSS Variables */
 :root {
   --primary: 220 92% 50%;

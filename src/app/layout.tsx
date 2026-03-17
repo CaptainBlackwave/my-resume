@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import { Header, Footer, SideNav } from '@/components/layout';
+import { ThemeProvider } from '@/components/layout/ThemeProvider';
 import { profile } from '@/data/profile';
 import './globals.css';
 
@@ -24,12 +25,14 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className="scroll-smooth">
+    <html lang="en" className="scroll-smooth" suppressHydrationWarning>
       <body className={`${inter.className} bg-gray-50 dark:bg-gray-950 text-gray-900 dark:text-gray-100 antialiased`}>
-        <Header />
-        <SideNav />
-        <main className="pt-16">{children}</main>
-        <Footer />
+        <ThemeProvider>
+          <Header />
+          <SideNav />
+          <main className="pt-16">{children}</main>
+          <Footer />
+        </ThemeProvider>
       </body>
     </html>
   );
